@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+section {
+    margin: 0 10%;
+}
+
+.pink {
+    color: #db4e94;
+}
+
+.four-content a.gray {
+    color: gray;
+    border-color: gray;
+}
+
+
+/* Top */
+
+.content a {
+    color: white
+}
+
+.search {
+    text-decoration: none;
+}
+
+.sign-up {
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 0.3rem;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    line-height: 15px;
+}
+
+.header-center {
+    font-size: 1.5rem;
+}
+
+.header-nav {
+    margin-top: 1rem;
+    width: 100%;
+    border-top: solid 1px grey;
+    padding-top: 10px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left a,
+.header-nav ul li a,
+.header-right a {
+    color: grey;
+}
+
+.top .body {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.body-content1 {
+    padding: 1rem 50% 1rem 20px;
+    width: 100%;
+    font-size: 24px;
+    text-align: left;
+    color: white;
+    background: black;
+}
+
+.body-content1 a {
+    color: white;
+}
+
+.body-content1 p {
+    margin: 15px 0;
+}
+
+.body-content2,
+.body-content3 {
+    margin-top: 1rem;
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.body-content1,
+.body-content2,
+.body-content3 {
+    border-radius: 5px;
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+.content {
+    width: 45%;
+    padding: 15px
+}
+
+.content p {
+    margin: 15px 0;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.content a {
+    color: blue;
+}
+
+content>p:nth-child(2) {
+    margin: 15px 0;
+}
+
+.thumbnail {
+    width: 45%;
+    border: solid 1px grey;
+    background: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Bottom*/
+
+
+/* .left-content */
+
+.bottom {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    line-height: 2rem;
+}
+
+.bottom h2 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+}
+
+.bottom h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.left-content>h3 {
+    font-style: italic;
+}
+
+.bottom .left-content {
+    width: 73%;
+    padding: 5px;
+}
+
+.left-content li {
+    margin-left: 25px;
+}
+
+.none-style {
+    list-style: none;
+}
+
+.none-style li {
+    margin: 0;
+}
+
+.bottom .right-content {
+    width: 25%;
+}
+
+.table table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.table table tr {
+    border-bottom: solid 1px grey;
+}
+
+.four-content>a {
+    color: blue;
+    border: solid 1px blue;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+
+/* .right-content */
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content h3 {
+    font-style: italic;
+}
+
+.right-content li {
+    list-style: none;
+}
+
+.right-content a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.right-content .about,
+.right-content .archives,
+.right-content .elsewhere {
+    padding: 10px 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: .3rem 0;
+}
+
+
+/* bot */
+
+.info {
+    height: 15vh;
+    width: 100%;
+    text-align: center;
+    padding: 4vh 0;
+    background: rgba(128, 128, 128, 0.658);
+}
+
+
+/* response */
+
+@media screen and (max-width:767px) {
+    .body {
+        flex-direction: column;
+    }
+    .body-content1,
+    .body-content2,
+    .body-content3 {
+        width: 100%;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header-nav ul {
+        flex-direction: row;
+        line-height: 20px;
+        justify-content: stretch;
+        flex-wrap: wrap;
+    }
+    .header-nav ul li {
+        width: 33%;
+    }
+    .header-left,
+    .header-center,
+    .header-right {
+        margin: 15px 0;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+    .bottom .left-content {
+        width: 100%;
+    }
+    .bottom .right-content {
+        width: 100%;
+    }
+}
